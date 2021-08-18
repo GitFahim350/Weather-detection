@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    body{
+        background-image: linear-gradient(rgb(199, 191, 191,0.1),rgb(199, 191, 191,0.1)),url('images/bg-image.jpg');
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card{
+        width: 500px;
+        height: 300px;
+        border-radius: 10px;
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .card input{
+        width: 100%;
+        height: 50px;
+
+    }
+    .card button{
+        width: 20%;
+        height: 50px;
+        background-color: rgb(255, 137, 129);
+    }
+    .first{
+        width: 100%;
+        display: flex;
+        background-color: rgb(255, 112, 112);
+        
+    }
+    .second{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: white;
+    }
+    button{
+        background-color: rgb(255, 109, 109);
+        color: white;
+    }
+</style>
+<body>
+    <div class="card">
+        <div class="first">
+            <input type="text" placeholder="Enter city name" id="inputText">
+            <button id="searchButton">Search</button>
+        </div>
+        <div class="second">
+
+            <h1 id="city_name">DHAKA</h1>
+            <br>
+            <h3 id="temparature">38<span>&#176;</span>C</h3>
+            <br>
+            <h4 id="weatherCondition">Cloudy</h4>
+
+        </div>
+
+        
+
+    </div>
+    <script src="scripts/script.js">
+
+    </script>
+    
+</body>
+</html>
